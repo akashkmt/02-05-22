@@ -70,7 +70,7 @@ function showcard(details){
 
     var weather = document.createElement('p');
     weather.id='weather';
-    weather.innerText='Weather : '+details.weather[0].main;
+    weather.innerText='Weather : '+details.weather[0].description;
 
     div.append(image, name, temp, pressure, humidity, windSpeed, sunrise, sunset, weather);
     document.querySelector('#cardFull').append(div);
